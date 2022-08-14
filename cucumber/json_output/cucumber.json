@@ -1,0 +1,187 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: your.email@your.domain.com"
+      },
+      {
+        "line": 2,
+        "value": "#Keywords Summary :"
+      },
+      {
+        "line": 3,
+        "value": "#Feature: List of scenarios."
+      },
+      {
+        "line": 4,
+        "value": "#Scenario: Business rule through list of steps with arguments."
+      },
+      {
+        "line": 5,
+        "value": "#Given: Some precondition step"
+      },
+      {
+        "line": 6,
+        "value": "#When: Some key actions"
+      },
+      {
+        "line": 7,
+        "value": "#Then: To observe outcomes or validation"
+      },
+      {
+        "line": 8,
+        "value": "#And,But: To enumerate more Given,When,Then steps"
+      },
+      {
+        "line": 9,
+        "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
+      },
+      {
+        "line": 10,
+        "value": "#Examples: Container for s table"
+      },
+      {
+        "line": 11,
+        "value": "#Background: List of steps run before each of the scenarios"
+      },
+      {
+        "line": 12,
+        "value": "#\"\"\" (Doc Strings)"
+      },
+      {
+        "line": 13,
+        "value": "#| (Data Tables)"
+      },
+      {
+        "line": 14,
+        "value": "#@ (Tags/Labels):To group Scenarios"
+      },
+      {
+        "line": 15,
+        "value": "#\u003c\u003e (placeholder)"
+      },
+      {
+        "line": 16,
+        "value": "#\"\""
+      },
+      {
+        "line": 17,
+        "value": "## (Comments)"
+      },
+      {
+        "line": 18,
+        "value": "#Sample Feature Definition Template"
+      }
+    ],
+    "line": 20,
+    "elements": [
+      {
+        "line": 22,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4242568146,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User is already on the login page",
+            "match": {
+              "location": "AddtoCartStepDefinitions.user_is_already_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "Add sauce labs products to cart",
+        "description": "",
+        "id": "sauce-demo-add-to-cart;add-sauce-labs-products-to-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 551500551,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User is already logged in with \"standard_user\" and \"secret_sauce\" credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 32
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 52
+                }
+              ],
+              "location": "AddtoCartStepDefinitions.user_is_already_logged_in_with_and_credentials(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 654750169,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User adds Fleece Jacket to cart",
+            "match": {
+              "location": "AddtoCartStepDefinitions.user_adds_Fleece_Jacket_to_cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 66837710,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User adds Onesie to cart",
+            "match": {
+              "location": "AddtoCartStepDefinitions.user_adds_Onesie_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5152790340,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User verifies the cart for the products added",
+            "match": {
+              "location": "AddtoCartStepDefinitions.user_verifies_the_cart_for_the_products_added()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 225765632,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User closes the browser",
+            "match": {
+              "location": "AddtoCartStepDefinitions.user_closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Sauce demo add to cart",
+    "description": "",
+    "id": "sauce-demo-add-to-cart",
+    "keyword": "Feature",
+    "uri": "/Users/lgounder/eclipse-workspace/cucumber/src/main/java/Features/addtocart.feature"
+  }
+]
