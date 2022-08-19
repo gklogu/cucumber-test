@@ -85,103 +85,90 @@
         "steps": [
           {
             "result": {
-              "duration": 4242568146,
+              "duration": 8932285352,
               "status": "passed"
             },
             "line": 24,
-            "name": "User is already on the login page",
+            "name": "User is already on the saucedemo login page",
             "match": {
-              "location": "AddtoCartStepDefinitions.user_is_already_on_the_login_page()"
+              "location": "LoginOneStepDefinitions.user_is_already_on_the_saucedemo_login_page()"
             },
             "keyword": "Given "
           }
         ]
       },
       {
-        "line": 27,
-        "name": "Add sauce labs products to cart",
+        "line": 26,
+        "name": "Sauce demo new login test",
         "description": "",
-        "id": "sauce-demo-add-to-cart;add-sauce-labs-products-to-cart",
+        "id": "sauce-demo-new-login;sauce-demo-new-login-test",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 551500551,
+              "duration": 450009746,
               "status": "passed"
             },
             "line": 29,
-            "name": "User is already logged in with \"standard_user\" and \"secret_sauce\" credentials",
+            "name": "User enters username and password",
             "match": {
-              "arguments": [
-                {
-                  "val": "standard_user",
-                  "offset": 32
-                },
-                {
-                  "val": "secret_sauce",
-                  "offset": 52
-                }
-              ],
-              "location": "AddtoCartStepDefinitions.user_is_already_logged_in_with_and_credentials(String,String)"
+              "location": "LoginOneStepDefinitions.user_enters_username_and_password(DataTable)"
             },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 654750169,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "User adds Fleece Jacket to cart",
-            "match": {
-              "location": "AddtoCartStepDefinitions.user_adds_Fleece_Jacket_to_cart()"
-            },
+            "rows": [
+              {
+                "cells": [
+                  "problem_user",
+                  "secret_sauce"
+                ],
+                "line": 30
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 66837710,
+              "duration": 296084919,
               "status": "passed"
             },
             "line": 31,
-            "name": "User adds Onesie to cart",
+            "name": "User clicks on the login button",
             "match": {
-              "location": "AddtoCartStepDefinitions.user_adds_Onesie_to_cart()"
+              "location": "LoginOneStepDefinitions.user_clicks_on_the_login_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5152790340,
+              "duration": 16364896,
               "status": "passed"
             },
             "line": 32,
-            "name": "User verifies the cart for the products added",
+            "name": "User logged in successfully",
             "match": {
-              "location": "AddtoCartStepDefinitions.user_verifies_the_cart_for_the_products_added()"
+              "location": "LoginOneStepDefinitions.user_logged_in_successfully()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 225765632,
+              "duration": 10431268411,
               "status": "passed"
             },
             "line": 33,
-            "name": "User closes the browser",
+            "name": "User logs out and closes the browser",
             "match": {
-              "location": "AddtoCartStepDefinitions.user_closes_the_browser()"
+              "location": "LoginOneStepDefinitions.user_logs_out_and_closes_the_browser()"
             },
             "keyword": "And "
           }
         ]
       }
     ],
-    "name": "Sauce demo add to cart",
+    "name": "Sauce demo new login",
     "description": "",
-    "id": "sauce-demo-add-to-cart",
+    "id": "sauce-demo-new-login",
     "keyword": "Feature",
-    "uri": "/Users/lgounder/eclipse-workspace/cucumber/src/main/java/Features/addtocart.feature"
+    "uri": "/Users/lgounder/git/repository/cucumber/src/main/java/Features/loginone.feature"
   }
 ]

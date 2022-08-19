@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(
-		features="/Users/lgounder/eclipse-workspace/cucumber/src/main/java/Features/addtocart.feature",
+		features="/Users/lgounder/git/repository/cucumber/src/main/java/Features/loginone.feature",
 		glue ={"stepDefinitions"},
 		plugin ={"pretty","html:test-output","json:json_output/cucumber.json",
 				"junit:junit_xml/cucumber.xml"},//to generate different type of reporting

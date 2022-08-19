@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="10.894213">
-<testcase classname="Sauce demo add to cart" name="Add sauce labs products to cart" time="10.894213">
-<system-out><![CDATA[Given User is already on the login page.....................................passed
-Given User is already logged in with "standard_user" and "secret_sauce" credentials.passed
-When User adds Fleece Jacket to cart........................................passed
-And User adds Onesie to cart................................................passed
-Then User verifies the cart for the products added..........................passed
-And User closes the browser.................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="20.126013">
+<testcase classname="Sauce demo new login" name="Sauce demo new login test" time="20.126013">
+<system-out><![CDATA[Given User is already on the saucedemo login page...........................passed
+When User enters username and password......................................passed
+And User clicks on the login button.........................................passed
+Then User logged in successfully............................................passed
+And User logs out and closes the browser....................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
