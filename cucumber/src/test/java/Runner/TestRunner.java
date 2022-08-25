@@ -14,8 +14,8 @@ import cucumber.api.junit.Cucumber;
 				"junit:junit_xml/cucumber.xml"},//to generate different type of reporting
 		dryRun=false, //to check if the mapping is proper between feature & step definition file
 		monochrome = true, //display the console output in proper readable format
-		strict = false//to check if any step is not defined in step definition file
-		
+		strict = false,//to check if any step is not defined in step definition file
+		tags = {"~@RegressionTest"}
 		)
 
 public class TestRunner {

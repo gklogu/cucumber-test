@@ -85,7 +85,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8932285352,
+              "duration": 9477757820,
               "status": "passed"
             },
             "line": 24,
@@ -98,40 +98,40 @@
         ]
       },
       {
-        "line": 26,
-        "name": "Sauce demo new login test",
+        "line": 39,
+        "name": "Sauce demo invalid login test",
         "description": "",
-        "id": "sauce-demo-new-login;sauce-demo-new-login-test",
+        "id": "sauce-demo-new-login;sauce-demo-invalid-login-test",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 450009746,
+              "duration": 422631715,
               "status": "passed"
             },
-            "line": 29,
-            "name": "User enters username and password",
+            "line": 41,
+            "name": "User enters invalid username and password",
             "match": {
-              "location": "LoginOneStepDefinitions.user_enters_username_and_password(DataTable)"
+              "location": "LoginOneStepDefinitions.user_enters_invalid_username_and_password(DataTable)"
             },
             "rows": [
               {
                 "cells": [
-                  "problem_user",
-                  "secret_sauce"
+                  "test_user",
+                  "password"
                 ],
-                "line": 30
+                "line": 42
               }
             ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 296084919,
+              "duration": 109874438,
               "status": "passed"
             },
-            "line": 31,
+            "line": 43,
             "name": "User clicks on the login button",
             "match": {
               "location": "LoginOneStepDefinitions.user_clicks_on_the_login_button()"
@@ -140,27 +140,33 @@
           },
           {
             "result": {
-              "duration": 16364896,
+              "duration": 127250,
               "status": "passed"
             },
-            "line": 32,
-            "name": "User logged in successfully",
+            "line": 44,
+            "name": "User login is not successful",
             "match": {
-              "location": "LoginOneStepDefinitions.user_logged_in_successfully()"
+              "location": "LoginOneStepDefinitions.user_login_is_not_successful()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 10431268411,
+              "duration": 285247281,
               "status": "passed"
             },
-            "line": 33,
-            "name": "User logs out and closes the browser",
+            "line": 45,
+            "name": "User quit the browser",
             "match": {
-              "location": "LoginOneStepDefinitions.user_logs_out_and_closes_the_browser()"
+              "location": "LoginOneStepDefinitions.user_quit_the_browser()"
             },
             "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 37,
+            "name": "@SanityTest"
           }
         ]
       }

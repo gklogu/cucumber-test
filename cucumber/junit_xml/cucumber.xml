@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="20.126013">
-<testcase classname="Sauce demo new login" name="Sauce demo new login test" time="20.126013">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="10.295639">
+<testcase classname="Sauce demo new login" name="Sauce demo invalid login test" time="10.295639">
 <system-out><![CDATA[Given User is already on the saucedemo login page...........................passed
-When User enters username and password......................................passed
+When User enters invalid username and password..............................passed
 And User clicks on the login button.........................................passed
-Then User logged in successfully............................................passed
-And User logs out and closes the browser....................................passed
+Then User login is not successful...........................................passed
+And User quit the browser...................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

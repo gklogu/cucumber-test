@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import java.sql.Driver;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -57,4 +58,20 @@ public class LoginOneStepDefinitions {
 		driver.quit();
 	}
 	
+	@When("^User enters invalid username and password$")
+	public void user_enters_invalid_username_and_password(DataTable BadCredentials)  {
+		List<List<String>> dataList1=BadCredentials.raw();
+		driver.findElement(By.id("user-name")).sendKeys(dataList1.get(0).get(0));
+		driver.findElement(By.id("password")).sendKeys(dataList1.get(0).get(1));  
+	}
+	
+	@Then("^User login is not successful$")
+	public void user_login_is_not_successful() {
+	    System.out.println("User login is failed");
+	}
+	
+	@Then("^User quit the browser$")
+	public void user_quit_the_browser() {
+	    driver.quit();
+	}
 }

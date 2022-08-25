@@ -22,8 +22,10 @@ Feature: Sauce demo new login
 Background: 
 
 Given User is already on the saucedemo login page
+
+@RegressionTest
  
-  Scenario: Sauce demo new login test
+    Scenario: Sauce demo new login test
     
    
     When User enters username and password
@@ -31,5 +33,15 @@ Given User is already on the saucedemo login page
     And User clicks on the login button
     Then User logged in successfully
     And User logs out and closes the browser
+    
+ @SanityTest
+    
+    Scenario: Sauce demo invalid login test
+    
+    When User enters invalid username and password
+    |test_user|password|
+    And User clicks on the login button
+    Then User login is not successful
+    And User quit the browser
 
   
